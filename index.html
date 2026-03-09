@@ -393,64 +393,33 @@
     <div class="project-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
 
 
-<!-- Project 0: Vehicle Insurance MLOps (Ongoing) -->
+<!-- Project 1 -->
 <div style="
-    max-width: 1100px;
-    margin: auto;
-    border: 2px solid #000000;
-    border-radius: 1rem;
-    padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.02);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-    position: relative;"
-  onmouseover="this.style.boxShadow='0 0 20px rgba(56, 189, 248, 0.6)'; this.style.transform='scale(1.02)'"
-  onmouseout="this.style.boxShadow='0 4px 10px rgba(0,0,0,0.6)'; this.style.transform='scale(1)'">
-  
-  <!-- Badge -->
-  <span style="position: absolute; top: 0.6rem; left: 0.6rem; background-color: #facc15; color: #000; font-weight: 600; font-size: 0.7rem; padding: 0.2rem 0.4rem; border-radius: 0.4rem;">
-    🚧 Ongoing
-  </span>
-
-  <img src="images/vehicle insurance.jpg" alt="Vehicle Insurance MLops Project" style="width:100%; height:180px; object-fit:cover;">
-  <div style="padding: 1.5rem;">
-    <h3 style="color: #38bdf8;">Vehicle Insurance (MLOps)</h3>
-    <p style="color: #f3f4f6;">This project is currently under development.</p>
-    <a href="https://github.com/Vandanasharma-1/Practice-to-built-end-to-end-MLOps-project" target="_blank" style="color: #facc15;"><i class="fab fa-github"></i> GitHub</a>
-  </div>
-</div>
-
-
-
-
-      <!-- Project 1 -->
-<div style="
-  max-width: 800px; /* reduced width */
+  max-width: 800px;
   margin: 1rem auto;
   border: 2px solid #000000;
   border-radius: 1rem;
-  padding: 1rem; /* reduced padding */
+  padding: 1rem;
   background-color: rgba(255, 255, 255, 0.02);
   box-shadow: 0 4px 10px rgba(0,0,0,0.6);
   transition: box-shadow 0.3s ease, transform 0.3s ease;"
   onmouseover="this.style.boxShadow='0 0 20px rgba(56, 189, 248, 0.6)'; this.style.transform='scale(1.02)'"
   onmouseout="this.style.boxShadow='0 4px 10px rgba(0,0,0,0.6)'; this.style.transform='scale(1)'">
 
-  <img src="images/twitter.jpg" alt="Twitter Sentiment Analysis"
-    style="width:100%; height:140px; object-fit:cover; border-radius: 0.5rem;">
+  <img src="images/credit.jpg" alt="Credit Risk Prediction" style="width:100%; height:140px; object-fit:cover; border-radius: 0.5rem;">
   
   <div style="padding: 1rem;">
-    <h3 style="color: #38bdf8; font-size: 1.1rem;">Twitter Sentiment Analysis (LSTM)</h3>
+    <h3 style="color: #38bdf8; font-size: 1.1rem;">Credit Risk Prediction System (AUC: 0.93)</h3>
     <p style="color: #f3f4f6; font-size: 0.83rem; text-align: justify;">
-      This project delivers an end-to-end deep learning solution for classifying real-world Twitter sentiment (Positive/Negative). I developed a Bidirectional LSTM neural network using TensorFlow/Keras, after meticulously cleaning and tokenizing tweet data. To build a robust model, I implemented Early Stopping and Model Checkpointing. The model achieved 99% accuracy on its unseen test set.
+      Developed a robust end-to-end machine learning system for predicting credit risk and supporting financial institutions in data-driven loan approval decisions. The project involved extensive data preprocessing including feature engineering, categorical encoding, feature scaling, and addressing class imbalance using SMOTE. Multiple machine learning algorithms such as Logistic Regression, Random Forest, XGBoost, and LightGBM were trained and evaluated using Stratified K-Fold cross-validation along with hyperparameter optimization using GridSearchCV. To further enhance predictive performance, an ensemble stacking architecture was implemented which significantly improved model stability and achieved an AUC score of 0.93. The solution provides interpretable insights that help financial organizations identify high-risk applicants and improve risk management strategies.
     </p>
-    <a href="https://github.com/Vandanasharma-1/Practice-LSTM-projects"
-       target="_blank" style="color: #facc15;"><i class="fab fa-github"></i> GitHub</a>
+    <a href="https://github.com/your-github-link" target="_blank" style="color: #facc15;"><i class="fab fa-github"></i> GitHub</a>
   </div>
 </div>
 
 
-      <!-- Project 2 -->
+
+<!-- Project 2 -->
 <div style="
   max-width: 800px;
   margin: 1rem auto;
@@ -463,22 +432,105 @@
   onmouseover="this.style.boxShadow='0 0 20px rgba(56, 189, 248, 0.6)'; this.style.transform='scale(1.02)'"
   onmouseout="this.style.boxShadow='0 4px 10px rgba(0,0,0,0.6)'; this.style.transform='scale(1)'">
   
-  <img src="images/house.jpg" alt="House Price Prediction" style="width:100%; height:140px; object-fit:cover; border-radius: 0.5rem;">
+  <img src="images/vehicle insurance.jpg" alt="Vehicle Insurance MLOps" style="width:100%; height:140px; object-fit:cover; border-radius: 0.5rem;">
   
   <div style="padding: 1rem;">
-    <h3 style="color: #38bdf8; font-size: 1.1rem;">House Price Prediction System (MLOps)</h3>
+    <h3 style="color: #38bdf8; font-size: 1.1rem;">Vehicle Insurance Risk Prediction – End-to-End MLOps Pipeline</h3>
     <p style="color: #f3f4f6; font-size: 0.83rem; text-align: justify;">
-      Developed an industrial-grade, end-to-end machine learning pipeline for predicting residential property prices, utilizing ZenML for streamlined pipeline orchestration, DVC for robust data and model versioning, and MLflow for experiment tracking and model management. Implemented CI/CD automation to enable continuous integration, testing, and deployment of models, ensuring rapid and reliable delivery. Technologies used: Python, scikit-learn, pandas, ZenML, DVC, MLflow, CI/CD tools.
-
-
+      Designed and implemented a production-grade end-to-end MLOps pipeline for predicting vehicle insurance risk. The project covers the complete machine learning lifecycle including automated data ingestion, validation, transformation, model training, and evaluation. The system was containerized using Docker and integrated with CI/CD workflows through GitHub Actions to enable automated testing and continuous deployment. A scalable prediction service was deployed on AWS EC2 and connected with MongoDB Atlas for efficient data storage and management. REST APIs were built using Flask to provide real-time insurance risk predictions. The system also includes structured logging, exception handling, and modular architecture to ensure reliability, scalability, and maintainability in production environments.
     </p>
-    <a href="https://github.com/Vandanasharma-1/Residence-Prices-prediction-System.git" target="_blank" style="color: #facc15;">
+    <a href="https://github.com/your-github-link" target="_blank" style="color: #facc15;">
       <i class="fab fa-github"></i> GitHub
     </a>
   </div>
 </div>
 
+
+
 <!-- Project 3 -->
+<div style="
+  max-width: 800px;
+  margin: 1rem auto;
+  border: 2px solid #000000;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.02);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;"
+  onmouseover="this.style.boxShadow='0 0 20px rgba(56, 189, 248, 0.6)'; this.style.transform='scale(1.02)'"
+  onmouseout="this.style.boxShadow='0 4px 10px rgba(0,0,0,0.6)'; this.style.transform='scale(1)'">
+
+  <img src="images/churn.jpg" alt="Customer Churn Prediction" style="width:100%; height:140px; object-fit:cover; border-radius: 0.5rem;">
+
+  <div style="padding: 1rem;">
+    <h3 style="color: #38bdf8; font-size: 1.1rem;">Customer Churn Prediction with Explainable AI</h3>
+    <p style="color: #f3f4f6; font-size: 0.83rem; text-align: justify;">
+      Built an advanced machine learning solution to predict telecom customer churn and identify key drivers influencing customer retention. The project involved extensive preprocessing including missing value treatment using KNN imputation, outlier handling through IQR techniques, and feature engineering to improve predictive performance. Multiple classification models were trained and evaluated using cross-validation to determine the most effective predictive approach. To enhance model transparency and business usability, SHAP explainability techniques were implemented to interpret individual feature contributions in churn predictions. The system enables organizations to proactively identify high-risk customers and design targeted retention strategies based on data-driven insights.
+    </p>
+    <a href="https://github.com/your-github-link" target="_blank" style="color: #facc15;">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+  </div>
+</div>
+
+
+
+<!-- Project 4 -->
+<div style="
+  max-width: 800px;
+  margin: 1rem auto;
+  border: 2px solid #000000;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.02);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;"
+  onmouseover="this.style.boxShadow='0 0 20px rgba(56, 189, 248, 0.6)'; this.style.transform='scale(1.02)'"
+  onmouseout="this.style.boxShadow='0 4px 10px rgba(0,0,0,0.6)'; this.style.transform='scale(1)'">
+
+  <img src="images/twitter.jpg" alt="Twitter Sentiment Analysis" style="width:100%; height:140px; object-fit:cover; border-radius: 0.5rem;">
+  
+  <div style="padding: 1rem;">
+    <h3 style="color: #38bdf8; font-size: 1.1rem;">Twitter Sentiment Analysis using Bidirectional LSTM</h3>
+    <p style="color: #f3f4f6; font-size: 0.83rem; text-align: justify;">
+      Developed a deep learning based natural language processing system for classifying Twitter sentiment into positive and negative categories. The project involved building a complete NLP pipeline including text cleaning, tokenization, sequence padding, and embedding representations. A Bidirectional LSTM neural network was implemented to capture contextual dependencies in sequential text data, improving sentiment classification performance. Regularization techniques such as dropout and early stopping were applied to prevent overfitting and improve generalization. Model performance was evaluated using precision, recall, and F1-score metrics to ensure balanced and reliable sentiment predictions on unseen data.
+    </p>
+    <a href="https://github.com/Vandanasharma-1/Practice-LSTM-projects"
+       target="_blank" style="color: #facc15;"><i class="fab fa-github"></i> GitHub</a>
+  </div>
+</div>
+
+
+
+<!-- Project 5 -->
+<div style="
+  max-width: 800px;
+  margin: 1rem auto;
+  border: 2px solid #000000;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.02);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;"
+  onmouseover="this.style.boxShadow='0 0 20px rgba(56, 189, 248, 0.6)'; this.style.transform='scale(1.02)'"
+  onmouseout="this.style.boxShadow='0 4px 10px rgba(0,0,0,0.6)'; this.style.transform='scale(1)'">
+
+  <img src="images/timeseries.jpg" alt="Time Series Forecasting" style="width:100%; height:140px; object-fit:cover; border-radius: 0.5rem;">
+
+  <div style="padding: 1rem;">
+    <h3 style="color: #38bdf8; font-size: 1.1rem;">Multivariate Time-Series Forecasting using LSTM</h3>
+    <p style="color: #f3f4f6; font-size: 0.83rem; text-align: justify;">
+      Developed a deep learning based forecasting system to model and predict complex multivariate financial time-series indicators using Long Short-Term Memory (LSTM) neural networks. The project involved rigorous preprocessing including stationarity testing, statistical validation, and the creation of rolling time-window sequences to capture temporal dependencies in sequential data. The LSTM architecture was optimized using dropout regularization and the Adam optimizer to improve generalization and reduce overfitting. Model performance was analyzed across different forecasting horizons to evaluate prediction stability and identify optimal time intervals for forecasting. This project demonstrates the effectiveness of deep learning techniques for modeling complex sequential financial data.
+    </p>
+    <a href="https://github.com/your-github-link" target="_blank" style="color: #facc15;">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+  </div>
+</div>
+
+
+
+<!-- Project 6 -->
 <div style="
   max-width: 800px;
   margin: 1rem auto;
@@ -496,7 +548,7 @@
   <div style="padding: 1rem;">
     <h3 style="color: #38bdf8; font-size: 1.1rem;">Olympics Performance Dashboard</h3>
     <p style="color: #f3f4f6; font-size: 0.83rem; text-align: justify;">
-      Olympic Insights is a Python and Streamlit application designed for interactive data analysis and visualization of the Summer Olympic Games. This user-friendly, interactive Streamlit dashboard provides deep dives into medal, country, and athlete insights spanning the rich history of the Summer Olympics from 1896 to 2016. Users can explore medal tallies by year and country, analyze overall trends with robust preprocessing and analytical helper functions, leveraging libraries like pandas, numpy, matplotlib, seaborn, and plotly for its powerful and dynamic visualizations.
+      Built an interactive data analytics dashboard using Python and Streamlit to explore historical trends in the Summer Olympic Games from 1896 to 2016. The application enables users to analyze medal distributions, athlete performance, and country-level statistics through dynamic visualizations and interactive filters. Extensive data preprocessing and feature engineering were performed using pandas and numpy, while libraries such as matplotlib, seaborn, and plotly were used to generate rich and interactive charts. The deployed application allows users to perform exploratory data analysis and gain meaningful insights into Olympic performance trends through an intuitive web interface.
     </p>
     <a href="https://olympic-insights-by-vs.onrender.com/" target="_blank" style="color: #4ade80; margin-right: 1rem;">
       <i class="fas fa-external-link-alt"></i> Live App
@@ -507,78 +559,10 @@
   </div>
 </div>
 
-      <!-- Project 4 -->
-<div style="
-  max-width: 800px;
-  margin: 1rem auto;
-  border: 2px solid #000000;
-  border-radius: 1rem;
-  padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.02);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;"
-  onmouseover="this.style.boxShadow='0 0 20px rgba(56, 189, 248, 0.6)'; this.style.transform='scale(1.02)'"
-  onmouseout="this.style.boxShadow='0 4px 10px rgba(0,0,0,0.6)'; this.style.transform='scale(1)'">
 
-  <img src="images/HR Summary (3).png" alt="HR Dashboard" style="width:100%; height:140px; object-fit:cover; border-radius: 0.5rem;">
-
-  <div style="padding: 1rem;">
-    <h3 style="color: #38bdf8; font-size: 1.1rem;">HR Analytics Dashboard</h3>
-    <p style="color: #f3f4f6; font-size: 0.83rem; text-align: justify;">Interactive dashboard for attrition and salary KPIs. Enabled strategic decisions via Tableau.</p>
-    <a href="https://public.tableau.com/app/profile/vandana.sharma8791/viz/HR-Dashboard_17224503921180/HRSummary" target="_blank" style="color: #4ade80;">
-      <i class="fas fa-chart-line"></i> View Dashboard
-    </a>
+    </div>
   </div>
-</div>
-
-<!-- Project 5 -->
-<div style="
-  max-width: 800px;
-  margin: 1rem auto;
-  border: 2px solid #000000;
-  border-radius: 1rem;
-  padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.02);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;"
-  onmouseover="this.style.boxShadow='0 0 20px rgba(56, 189, 248, 0.6)'; this.style.transform='scale(1.02)'"
-  onmouseout="this.style.boxShadow='0 4px 10px rgba(0,0,0,0.6)'; this.style.transform='scale(1)'">
-
-  <img src="images/brain.jpg" alt="Brain Tumor Classification" style="width:100%; height:140px; object-fit:cover; border-radius: 0.5rem;">
-
-  <div style="padding: 1rem;">
-    <h3 style="color: #38bdf8; font-size: 1.1rem;">Brain Tumor Classification (CNN)</h3>
-    <p style="color: #f3f4f6; font-size: 0.83rem; text-align: justify;">This project focuses on Brain Tumor Classification using a Convolutional Neural Network (CNN). Leveraging the pre-trained VGG19 architecture, the system classifies brain tumors with enhanced performance due to the strategic application of data augmentation techniques. This approach achieved an 82% accuracy, demonstrating its effectiveness in aiding the critical task of tumor detection and categorization from medical images.
-
-</p>
-    <a href="https://github.com/Vandanasharma-1/Brain-Tumor-Classification-Using-Deep-Learning" target="_blank" style="color: #facc15;">
-      <i class="fab fa-github"></i> GitHub
-    </a>
-  </div>
-</div>
-
-      <!-- Project 6: AI Gym Tracker & Pose Detector -->
-<div style="
-  max-width: 800px;
-  margin: 1rem auto;
-  border: 2px solid #000000;
-  border-radius: 1rem;
-  padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.02);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;"
-  onmouseover="this.style.boxShadow='0 0 20px rgba(56, 189, 248, 0.6)'; this.style.transform='scale(1.02)'"
-  onmouseout="this.style.boxShadow='0 4px 10px rgba(0,0,0,0.6)'; this.style.transform='scale(1)'">
-
-  <img src="images/ai gym.jpg" alt="AI Gym Tracker" style="width:100%; height:140px; object-fit:cover; border-radius: 0.5rem;">
-  
-  <div style="padding: 1rem;">
-    <h3 style="color: #38bdf8; font-size: 1.1rem;">AI Gym Tracker & Pose Detector</h3>
-    <p style="color: #f3f4f6; font-size: 0.83rem; text-align: justify;">This AI Gym Tracker & Pose Detector is a real-time computer vision system that leverages MediaPipe for advanced pose estimation. It accurately counts exercise repetitions in real time, providing users with instant feedback, and demonstrates an 85% accuracy in its rep-counting capabilities.
-</p>
-    <a href="https://github.com/Vandanasharma-1/AI-gym-tracker-and-pose-detector" target="_blank" style="color: #facc15;"><i class="fab fa-github"></i> GitHub</a>
-  </div>
-</div>
+</section>
 
 <!-- Project 7: Movie Recommender System -->
 <div style="
